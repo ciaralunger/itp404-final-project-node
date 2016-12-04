@@ -18,7 +18,9 @@ var sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
 //domain access
 app.use(cors());
 app.use(bodyParser());
-app.use(bodyParser.urlencoded({extended: true});
+app.use(bodyParser.urlencoded({
+	extended: true})
+);
 
 
 //Restaurants
